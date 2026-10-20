@@ -74,6 +74,8 @@ Contributions welcome: open a PR (see [Contributing](#contributing)).
 6. **A missed Ping is a missed refund.** If your server is down or errors when a refund or chargeback Ping arrives, you can miss it. Run a periodic reconcile against the Sales API so access is removed anyway.
 7. **Fees differ by channel.** Direct sales and Discover marketplace sales are charged differently, so compute net per sale instead of applying one flat rate. Check Gumroad's current pricing page for the rates.
 
+Walkthroughs with code for these: [Gumroad developer guides](https://github.com/NarwhalThePong/gumroad-license-check/tree/main/docs) (license checks, private repo access, sale alerts, Discord roles).
+
 ## Paid kits
 Disclosure: these are made by the maintainer of this list.
 - [Gumroad License Kit](https://paudrudis.gumroad.com/l/dufcs) - License verification with offline cache, activation limits and a proxy; Node and Python.
