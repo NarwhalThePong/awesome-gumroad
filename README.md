@@ -15,6 +15,7 @@ Contributions welcome: open a PR (see [Contributing](#contributing)).
 - [Embeds, themes and storefronts](#embeds-themes-and-storefronts)
 - [Auth](#auth)
 - [Testing and debugging](#testing-and-debugging)
+- [Free web tools](#free-web-tools)
 - [Gotchas every Gumroad developer hits](#gotchas-every-gumroad-developer-hits)
 - [Paid kits](#paid-kits)
 
@@ -64,6 +65,13 @@ Contributions welcome: open a PR (see [Contributing](#contributing)).
 
 ## Testing and debugging
 - [justinmahar/gumroad-api-tester](https://github.com/justinmahar/gumroad-api-tester) - Web tool for poking at the Gumroad API.
+
+## Free web tools
+Disclosure: these are made by the maintainer of this list. They run in the browser and don't upload anything.
+- [Gumroad license key checker](https://narwhalthepong.github.io/gumroad-license-check/gumroad-license-key-checker) - Check a key's validity, refund, chargeback, dispute and subscription status without incrementing its uses.
+- [Gumroad fee calculator](https://narwhalthepong.github.io/gumroad-license-check/gumroad-fee-calculator) - Payout on direct vs Discover sales and the price needed for a target payout.
+- [Gumroad sales CSV analyzer](https://narwhalthepong.github.io/gumroad-license-check/gumroad-sales-csv-analyzer) - Gross, refunds, fees and net by product, month, referrer and country from a sales export.
+- [Gumroad bundle and discount calculator](https://narwhalthepong.github.io/gumroad-license-check/gumroad-bundle-discount-calculator) - Bundle and offer-code pricing with fees and buyer savings.
 
 ## Gotchas every Gumroad developer hits
 1. **`/v2/licenses/verify` returns `success: true` after a refund.** The key still exists. Check `purchase.refunded`, `purchase.chargebacked`, `purchase.disputed`, and for memberships `subscription_ended_at`, `subscription_cancelled_at` and `subscription_failed_at`, or refunded buyers keep access.
